@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Caveat:wght@700&family=IBM+Plex+Mono:wght@100&family=Luckiest+Guy&family=Press+Start+2P&display=swap');
+
+body {
+background-color: #937DC2;
+}
+
+#selecciona-mascota{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 187px;
+    margin: 14px;
+}
+
+.subtitulo {
+    font-size: 25px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.tarjetas{
+    display: flex;
+    gap: 20px;
+}
+
+.tarjeta-mokepon{
+    width: 250px;
+    height: 250px;
+    background-color: #5B4B8A;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tarjeta-mokepon p{
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.tarjeta-mokepon img{
+    width: 210px;
+}
+
+input{
+    display: none;
+}
+
+input:checked + label {
+    background-color: #3E065F;
+}
+
+#boton-mascota{
+    width: 227px;
+    height: 49px;
+    font-size: 30px;
+    border-radius: 10px;
+    padding: 6px;
+    margin: 40px;
+    background-color: #2E0249;
+    color: white;
+    font-family: 'Bangers', cursive;
+    cursor: pointer;
+}
+
+#selecciona-ataque{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo1{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 100px;
+    margin: 14px;
+}
+
+.boton-ataque {
+    width: 155px;
+    height: 35px;
+    font-size: 17px;
+    margin-right: 51px;
+    margin-top: 10px;
+    font-family: 'Luckiest Guy', cursive;
+    border-radius: 7px;
+    border-color: dimgrey;
+    cursor: pointer;
+}
+
+#mensajes {
+    width: 739px;
+    height: 36px;
+    display: flex;
+    padding: 10px;
+    margin: 15px;
+    background-color: white;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-family: 'Press Start 2P', cursive
+}
+
+#reinicio-juego {
+    width: 227px;
+    height: 49px;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 6px;
+    margin-left: 303px;
+    background-color: #2E0249;
+    color: white;
+    font-family: 'Bangers', cursive;
+    cursor: pointer;
+}
+
+.ataques{
+    display: grid;
+    grid-template-columns: 400px 300px;
+}
+
+.column-jugador, .column-enemigo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    margin: 36px;
+    width: 300px;
+    height: 398px;
+    gap: -15px;
+    justify-content: space-between;
+    border-radius: 6px;
+    align-content: space-around;
+    background-color: #624F82;
+    
+}
+
+#vidas-jugador, #vidas-enemigo {
+    font-size: 80px;
+    margin-top: auto;
+    color: #F1F1F6;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#jugador, #enemigo {
+    font-size: 20px;
+    margin-top: 0;
+    padding: 10px;
+    font-family: 'Caveat', cursive;
+}
+
+#nombre-jugador, #nombre-enemigo {
+    font-size: 20px;
+    margin-top: -67px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#ataque-jugador, #ataque-enemigo{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 15px;
+}
+
+#ver-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#mapa {
+    border: 2px solid white;
+}
+
+.botones-mover {
+    display: grid;
+    gap: 10px;
+    margin: 10px;
+    justify-items: center
+}
+
+.mover-horizontal {
+    display: flex;
+    margin: -6px;
+}
+
+.boton-mover {
+    width: 10px;
+    width: 60px;
+    height: 23px;
+    margin: -1px;
+    margin-left: 29px;
+}
+
+@media (max-width: 400px){
+    .tarjetas {
+        flex-direction: column;
+    }
+}
